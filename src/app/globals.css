@@ -1,0 +1,48 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom font imports */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(15, 15, 15);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(45, 90, 61);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(55, 110, 75);
+}
+
+/* Prevent layout shift */
+html {
+  overflow-y: scroll;
+}
+
+body {
+  @apply bg-bg-dark text-text-light;
+}
+
+/* Link styling */
+a {
+  @apply transition-colors;
+}
+
+/* Selection color */
+::selection {
+  @apply bg-accent-green text-bg-dark;
+}
