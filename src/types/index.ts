@@ -9,6 +9,7 @@ export interface CaseStudy {
   thumbnailImage: string
   heroImage: string
   sections: Section[]
+  gallery?: GalleryImage[]
   outcomes: {
     metrics: string
     learnings: string
@@ -18,4 +19,10 @@ export interface CaseStudy {
 export interface Section {
   heading: string
   body: string
+}
+
+export interface GalleryImage {
+  src: string
+  alt: string
+  caption?: string
 }

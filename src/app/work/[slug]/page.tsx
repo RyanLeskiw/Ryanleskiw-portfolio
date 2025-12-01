@@ -1,6 +1,7 @@
 import { caseStudies } from '@/data/caseStudies'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
+import ImageGallery from '@/components/ImageGallery'
 
 interface CaseStudyPageProps {
   params: {
@@ -79,6 +80,14 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
             </section>
           ))}
         </div>
+
+        {/* Image Gallery */}
+        {study.gallery && study.gallery.length > 0 && (
+          <section className="mt-16 pt-12 border-t border-gray-800">
+            <h2 className="text-2xl font-bold text-text-light mb-8">Project Gallery</h2>
+            <ImageGallery images={study.gallery} columns={2} />
+          </section>
+        )}
 
         {/* Outcomes */}
         <section className="mt-16 pt-12 border-t border-gray-800">

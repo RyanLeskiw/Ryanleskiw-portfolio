@@ -10,7 +10,7 @@ export default function Hero() {
         </div>
 
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-text-light mb-6 max-w-3xl mx-auto">
-          An Iterative Observer: Research to Resolution
+          A Creative, Collaborative, UX Generalist: Research To Resolution
         </h1>
 
         <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
@@ -19,7 +19,7 @@ export default function Hero() {
 
         <Link
           href="/work"
-          className="inline-block px-8 py-3 bg-accent-green text-bg-dark font-bold rounded hover:bg-green-600 transition-colors"
+          className="inline-block px-8 py-3 bg-green-500 text-white font-bold rounded hover:bg-green-800 transition-colors"
         >
           View My Work
         </Link>

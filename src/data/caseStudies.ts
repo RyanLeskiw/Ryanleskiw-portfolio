@@ -4,7 +4,7 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: 'headspace-sleep-mood',
     title: 'Headspace — Sleep Mood',
-    summary: 'Designing a personalized sleep feature through user interviews and iterative testing.',
+    summary: 'Designing a personalized sleep feature that addresses the critical but under-served dimension of mental wellness through research-driven design.',
     projectType: 'UX Research & Design',
     timeline: 'Jan 2024 - Mar 2024',
     role: 'Lead Researcher',
@@ -13,37 +13,65 @@ export const caseStudies: CaseStudy[] = [
     heroImage: '/assets/headspace/hero.webp',
     sections: [
       {
-        heading: 'Project Overview',
-        body: 'A comprehensive overview of the Headspace Sleep Mood feature project.',
-      },
-      {
         heading: 'Context & Problem',
-        body: 'Understanding the challenges users face with sleep personalization.',
+        body: 'Headspace users struggle with inconsistent sleep routines that undermine overall wellness. Sleep affects mood, focus, and motivation—yet the app lacked a dedicated feature addressing this connection. This was an opportunity to create a sleep-focused experience within the existing ecosystem.',
       },
       {
         heading: 'Research & Insights',
-        body: 'User interviews, affinity mapping, and key insights from qualitative research.',
+        body: 'Three semi-structured interviews revealed: users value simplicity and personalization, many associate good sleep with reduced stress, and they prefer human-guided support over AI-only interactions. Key insight: Sleep is a pivotal but under-served dimension of mental wellness that could increase both perceived effectiveness and daily engagement.',
       },
       {
         heading: 'Ideation & Architecture',
-        body: 'Exploring multiple concepts including Fresh Air Mode and AI alternatives.',
+        body: 'We brainstormed three concepts: Sleep Mood, Fresh Air Mode, and AI Mindfulness Guide. Affinity mapping prioritized Sleep Mood for universal relevance. Core components: customizable soundscapes, narrated bedtime stories, science-backed sleep videos, and progress tracking. Sleep Mood automatically softens the UI (reduced brightness, cooler tones) to signal mental transition into rest.',
       },
       {
         heading: 'Design Evolution',
-        body: 'Iterative design process and refinement based on user feedback.',
+        body: 'Wireframes refined the Sleep Mood activation flow, simplifying redundant navigation into a single toggle. Visual hierarchy emphasized calm immersion over information density. Accessibility priorities: large tap targets, high-contrast typography for night-time readability, and consistency with Headspace\'s brand identity.',
       },
       {
         heading: 'Final Concept',
-        body: 'The final Sleep Mood solution and implementation details.',
+        body: 'Sleep Mood transforms Headspace into a serene night-time companion. Key features: calm interface shift, multi-sensory engagement (soundscapes, stories, videos), gentle progress prompts, and emotional framing through the persona "Emma Taylor," a marketing professional with irregular work hours.',
       },
       {
         heading: 'Outcomes & Learnings',
-        body: 'Results, impact metrics, and key takeaways from the project.',
+        body: 'The concept ended at the design phase (no prototype testing). Peer feedback validated sleep as a strategic expansion for retention. Learnings: user empathy improves ideation, collaborative research deepens understanding, and speculative features benefit from human-centered storytelling. Future work: lo-fi prototyping and usability testing.',
+      },
+    ],
+    gallery: [
+      {
+        src: '/assets/headspace/research-coding.webp',
+        alt: 'Affinity mapping and thematic coding',
+        caption: 'Collaborative coding workshop - synthesizing research themes',
+      },
+      {
+        src: '/assets/headspace/insights.webp',
+        alt: 'Key research insights and user journey mapping',
+        caption: 'Key insights from user interviews and affinity mapping',
+      },
+      {
+        src: '/assets/headspace/ideation.webp',
+        alt: 'Feature ideation and architecture wireframes',
+        caption: 'Ideation workshop - exploring Sleep Mood, Fresh Air Mode, and AI alternatives',
+      },
+      {
+        src: '/assets/headspace/soundscapes.webp',
+        alt: 'Customizable soundscapes feature design',
+        caption: 'Sleep Mood soundscapes feature - 50 Hz customizable sounds',
+      },
+      {
+        src: '/assets/headspace/design-iterations.webp',
+        alt: 'UI design iterations and transitions',
+        caption: 'Design evolution - refining Sleep Mood activation and visual transitions',
+      },
+      {
+        src: '/assets/headspace/final-concept.webp',
+        alt: 'Final Sleep Mood interface mockups',
+        caption: 'Final concept - multi-sensory engagement with soundscapes, stories, and videos',
       },
     ],
     outcomes: {
-      metrics: 'Pending - Add quantitative results',
-      learnings: 'Pending - Add qualitative reflections',
+      metrics: 'Our goal was to design a new feature concept that improves user retention and expands Headspace\'s value by addressing unmet user needs. We aimed to: (1) Support healthier, consistent sleep habits, (2) Create a low-effort, calming routine within the app\'s ecosystem, (3) Strengthen engagement through personalization and emotional resonance. Success was measured qualitatively: peer feedback during feature pitches and alignment with research insights.',
+      learnings: 'Although the project ended at the concept phase (no prototype testing), we gathered valuable takeaways: (1) User empathy improves ideation fidelity—interviews clarified emotional pain points. (2) Collaborative coding deepened our understanding of shared human needs. (3) The "Sleep Mood" concept resonated strongly with peers, validating sleep as a strategic expansion for retention. (4) Future work would include lo-fi prototyping and usability testing to evaluate flow clarity and emotional tone. Reflection: This project solidified my appreciation for research-driven design. The process, moving from empathy to synthesis to storytelling, demonstrated how even speculative features can be influenced by human characteristics and emotions. The Sleep Mood concept represents a bridge between emotional resonance and functional calm: a UX architecture for rest.',
     },
   },
   {
@@ -84,6 +112,28 @@ export const caseStudies: CaseStudy[] = [
       {
         heading: 'Outcomes & Learnings',
         body: 'Usability testing results and impact on user engagement.',
+      },
+    ],
+    gallery: [
+      {
+        src: '/assets/gobi/mascot-1.webp',
+        alt: 'Mascot exploration sketches',
+        caption: 'Early mascot character exploration',
+      },
+      {
+        src: '/assets/gobi/mascot-2.webp',
+        alt: 'Final mascot design',
+        caption: 'Final mascot design and expressions',
+      },
+      {
+        src: '/assets/gobi/ui-1.webp',
+        alt: 'Dashboard interface',
+        caption: 'Gamified dashboard with achievement tracking',
+      },
+      {
+        src: '/assets/gobi/ui-2.webp',
+        alt: 'Reward system',
+        caption: 'GobCoins reward and achievement system',
       },
     ],
     outcomes: {
@@ -129,6 +179,28 @@ export const caseStudies: CaseStudy[] = [
       {
         heading: 'Outcomes & Learnings',
         body: 'Summary of findings and recommendations for product improvement.',
+      },
+    ],
+    gallery: [
+      {
+        src: '/assets/spotify/audit-1.webp',
+        alt: 'Current state analysis',
+        caption: 'Current Spotify interface analysis',
+      },
+      {
+        src: '/assets/spotify/audit-2.webp',
+        alt: 'Pain point mapping',
+        caption: 'Identified pain points and friction areas',
+      },
+      {
+        src: '/assets/spotify/solution-1.webp',
+        alt: 'Proposed solution 1',
+        caption: 'Improved discoverability interface redesign',
+      },
+      {
+        src: '/assets/spotify/solution-2.webp',
+        alt: 'Proposed solution 2',
+        caption: 'Algorithm fatigue mitigation strategy',
       },
     ],
     outcomes: {
