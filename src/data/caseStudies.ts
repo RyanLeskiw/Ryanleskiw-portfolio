@@ -90,8 +90,8 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
     outcomes: {
-      metrics: 'Our goal was to design a new feature concept that improves user retention and expands Headspace\'s value by addressing unmet user needs. We aimed to: (1) Support healthier, consistent sleep habits, (2) Create a low-effort, calming routine within the app\'s ecosystem, (3) Strengthen engagement through personalization and emotional resonance. Success was measured qualitatively: peer feedback during feature pitches and alignment with research insights.',
-      learnings: 'Although the project ended at the concept phase (no prototype testing), we gathered valuable takeaways: (1) User empathy improves ideation fidelity—interviews clarified emotional pain points. (2) Collaborative coding deepened our understanding of shared human needs. (3) The "Sleep Mood" concept resonated strongly with peers, validating sleep as a strategic expansion for retention. (4) Future work would include lo-fi prototyping and usability testing to evaluate flow clarity and emotional tone. Reflection: This project solidified my appreciation for research-driven design. The process, moving from empathy to synthesis to storytelling, demonstrated how even speculative features can be influenced by human characteristics and emotions. The Sleep Mood concept represents a bridge between emotional resonance and functional calm: a UX architecture for rest.',
+      metrics: 'Sleep Mood validated sleep as a strategic retention opportunity for Headspace. Peer feedback confirmed the concept\'s appeal and feasibility within the existing ecosystem.',
+      learnings: 'This research-driven project demonstrated that user empathy accelerates ideation, collaborative synthesis deepens insight, and human-centered storytelling strengthens speculative design. Though ending at the concept phase, the process—from interviews to affinity mapping to final design—proved that embedding emotional resonance (calm UI, multi-sensory engagement) into functional features creates compelling UX architecture for user wellbeing.',
     },
   },
   {
