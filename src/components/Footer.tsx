@@ -12,12 +12,6 @@ export default function Footer() {
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-text-light hover:text-accent-green transition-colors">
               LinkedIn
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-text-light hover:text-accent-green transition-colors">
-              Twitter
-            </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-text-light hover:text-accent-green transition-colors">
-              GitHub
-            </a>
           </div>
         </div>
       </div>
