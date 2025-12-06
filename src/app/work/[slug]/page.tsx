@@ -79,13 +79,27 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
               <section>
                 <h2 className="text-2xl font-bold text-text-light mb-4">{section.heading}</h2>
                 <p className="text-gray-400 leading-relaxed">{section.body}</p>
+
+                {/* Insert a pull quote after Research & Insights for Headspace */}
+                {study.slug === 'headspace-sleep-mood' && section.heading === 'Research & Insights' && (
+                  <PullQuote>
+                    {"If I can't sleep I'll usually like read or write in a journal or something. That kind of helps."}
+                  </PullQuote>
+                )}
               </section>
 
-              {/* Insert a pull quote after Research & Insights for Headspace */}
-              {study.slug === 'headspace-sleep-mood' && section.heading === 'Research & Insights' && (
-                <PullQuote>
-                  {"If I can't sleep I'll usually like read or write in a journal or something. That kind of helps."}
-                </PullQuote>
+              {/* Inline section image */}
+              {section.image && (
+                <div className="mt-8 mb-8">
+                  <img 
+                    src={section.image} 
+                    alt={section.imageAlt || section.heading}
+                    className="w-full rounded-lg shadow-lg"
+                  />
+                  {section.imageCaption && (
+                    <p className="text-sm text-gray-500 mt-3 text-center">{section.imageCaption}</p>
+                  )}
+                </div>
               )}
             </div>
           ))}

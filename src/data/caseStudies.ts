@@ -15,22 +15,37 @@ export const caseStudies: CaseStudy[] = [
       {
         heading: 'Context & Problem',
         body: 'Headspace users struggle with inconsistent sleep routines that undermine overall wellness. Sleep affects mood, focus, and motivation—yet the app lacked a dedicated feature addressing this connection. This was an opportunity to create a sleep-focused experience within the existing ecosystem.',
+        image: '/assets/headspace/bedtime-stories-ui.webp',
+        imageAlt: 'Bedtime Stories feature interface',
+        imageCaption: 'Bedtime Stories interface - multi-sensory engagement with stories, soundscapes, and audiobooks',
       },
       {
         heading: 'Research & Insights',
         body: 'Three semi-structured interviews revealed: users value simplicity and personalization, many associate good sleep with reduced stress, and they prefer human-guided support over AI-only interactions. Key insight: Sleep is a pivotal but under-served dimension of mental wellness that could increase both perceived effectiveness and daily engagement.',
+        image: '/assets/headspace/research-brainstorm.webp',
+        imageAlt: 'Research synthesis and brainstorm mindmap',
+        imageCaption: 'Collaborative brainstorm - synthesizing research into core Sleep Mood features',
       },
       {
         heading: 'Ideation & Architecture',
         body: 'We brainstormed three concepts: Sleep Mood, Fresh Air Mode, and AI Mindfulness Guide. Affinity mapping prioritized Sleep Mood for universal relevance. Core components: customizable soundscapes, narrated bedtime stories, science-backed sleep videos, and progress tracking. Sleep Mood automatically softens the UI (reduced brightness, cooler tones) to signal mental transition into rest.',
+        image: '/assets/headspace/three-concepts.webp',
+        imageAlt: 'Three feature concept options',
+        imageCaption: 'Ideation workshop - Fresh Air Mode, Sleep Mood, and AI Feature concepts',
       },
       {
         heading: 'Design Evolution',
         body: 'Wireframes refined the Sleep Mood activation flow, simplifying redundant navigation into a single toggle. Visual hierarchy emphasized calm immersion over information density. Accessibility priorities: large tap targets, high-contrast typography for night-time readability, and consistency with Headspace\'s brand identity.',
+        image: '/assets/headspace/sleep-mood-flows.webp',
+        imageAlt: 'Sleep Mood interface flows and transitions',
+        imageCaption: 'Design evolution - Sleep Mood activation, content selection, and playback flows',
       },
       {
         heading: 'Final Concept',
         body: 'Sleep Mood transforms Headspace into a serene night-time companion. Key features: calm interface shift, multi-sensory engagement (soundscapes, stories, videos), gentle progress prompts, and emotional framing through the persona "Emma Taylor," a marketing professional with irregular work hours.',
+        image: '/assets/headspace/sleep-mood-final.webp',
+        imageAlt: 'Final Sleep Mood concept design',
+        imageCaption: 'Final concept - Sleep Mood transforms Headspace into a serene night-time companion',
       },
       {
         heading: 'Outcomes & Learnings',

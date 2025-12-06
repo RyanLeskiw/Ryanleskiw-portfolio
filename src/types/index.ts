@@ -19,6 +19,9 @@ export interface CaseStudy {
 export interface Section {
   heading: string
   body: string
+  image?: string
+  imageAlt?: string
+  imageCaption?: string
 }
 
 export interface GalleryImage {
