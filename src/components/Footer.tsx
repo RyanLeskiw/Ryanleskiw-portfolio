@@ -9,7 +9,7 @@ export default function Footer() {
             <p>&copy; {currentYear} Ryan Leskiw. All rights reserved.</p>
           </div>
           <div className="flex gap-6">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-text-light hover:text-accent-green transition-colors">
+            <a href="https://www.linkedin.com/in/ryanleskiw" target="_blank" rel="noopener noreferrer" className="text-text-light hover:text-accent-green transition-colors">
               LinkedIn
             </a>
           </div>
