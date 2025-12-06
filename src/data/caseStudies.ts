@@ -9,7 +9,7 @@ export const caseStudies: CaseStudy[] = [
     timeline: 'Jan 2024 - Mar 2024',
     role: 'Lead Researcher',
     team: ['You', 'Design Team', 'Research Partners'],
-    thumbnailImage: '/assets/headspace/thumbnail.webp',
+    thumbnailImage: '/assets/headspace/hero.webp',
     heroImage: '/assets/headspace/hero.webp',
     sections: [
       {
