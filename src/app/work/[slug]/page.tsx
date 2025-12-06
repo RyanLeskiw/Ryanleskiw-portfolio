@@ -2,6 +2,7 @@ import { caseStudies } from '@/data/caseStudies'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import ImageGallery from '@/components/ImageGallery'
+import PullQuote from '@/components/PullQuote'
 
 interface CaseStudyPageProps {
   params: {
@@ -74,10 +75,19 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
         {/* Case Study Sections */}
         <div className="space-y-12">
           {study.sections.map((section, index) => (
-            <section key={index}>
-              <h2 className="text-2xl font-bold text-text-light mb-4">{section.heading}</h2>
-              <p className="text-gray-400 leading-relaxed">{section.body}</p>
-            </section>
+            <div key={index}>
+              <section>
+                <h2 className="text-2xl font-bold text-text-light mb-4">{section.heading}</h2>
+                <p className="text-gray-400 leading-relaxed">{section.body}</p>
+              </section>
+
+              {/* Insert a pull quote after Research & Insights for Headspace */}
+              {study.slug === 'headspace-sleep-mood' && section.heading === 'Research & Insights' && (
+                <PullQuote>
+                  {"If I can't sleep I'll usually like read or write in a journal or something. That kind of helps."}
+                </PullQuote>
+              )}
+            </div>
           ))}
         </div>
 

@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  basePath: '',
   images: {
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
@@ -8,6 +10,7 @@ const nextConfig = {
         hostname: '**',
       },
     ],
+    unoptimized: true,
   },
   compress: true,
   swcMinify: true,
