@@ -117,13 +117,11 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
         {/* Outcomes */}
         <section className="mt-16 pt-12 border-t border-gray-800">
           <h2 className="text-2xl font-bold text-text-light mb-6">Outcomes & Learnings</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="space-y-6">
             <div>
-              <h3 className="text-lg font-semibold text-accent-green mb-3">Metrics</h3>
               <p className="text-gray-400">{study.outcomes.metrics}</p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-accent-green mb-3">Learnings</h3>
               <p className="text-gray-400">{study.outcomes.learnings}</p>
             </div>
           </div>
