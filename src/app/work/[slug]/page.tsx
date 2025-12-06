@@ -41,13 +41,14 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
   return (
     <article className="py-16 px-4 sm:px-6 lg:px-8 bg-bg-dark">
       <div className="max-w-3xl mx-auto">
-        {/* Hero Image Placeholder */}
-        <div className="w-full aspect-video bg-gray-900 rounded-lg mb-12 flex items-center justify-center">
-          <div className="text-center text-gray-600">
-            <p className="text-sm">Hero Image</p>
-            <p className="text-xs mt-1">{study.slug}</p>
-          </div>
-        </div>
+        {/* Hero Image */}
+        {study.heroImage && (
+          <img 
+            src={study.heroImage}
+            alt={study.title}
+            className="w-full aspect-video object-cover rounded-lg mb-12"
+          />
+        )}
 
         {/* Title & Meta */}
         <header className="mb-12 border-b border-gray-800 pb-8">
