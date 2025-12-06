@@ -5,7 +5,7 @@ export const caseStudies: CaseStudy[] = [
     slug: 'headspace-sleep-mood',
     title: 'Headspace — Sleep Mood',
     summary: 'Designing a personalized sleep feature that addresses the critical but under-served dimension of mental wellness through research-driven design.',
-    projectType: 'UX Research & Design',
+    projectType: 'Student Project: UX Design',
     timeline: 'Jan 2024 - Mar 2024',
     role: 'Lead Researcher',
     team: ['You', 'Design Team', 'Research Partners'],
