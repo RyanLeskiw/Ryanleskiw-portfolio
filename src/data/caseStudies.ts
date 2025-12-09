@@ -127,7 +127,7 @@ export const caseStudies: CaseStudy[] = [
       },
       {
         heading: 'Outcomes & Learnings',
-        body: 'Testing Impact:\n• 4 participant usability sessions validated core flows.\n• All users described Gobi as "fun, human, and motivating."\n• Emotional feedback ("Gobi\'s disappointed face") improved self-awareness.\n• Gamification balanced accountability, reducing stigma.\n\nReflection & Next Steps:\n• Further testing could refine social and community features (friend challenges, leaderboard visibility).\n• Expanded accessibility and adaptive challenge scaling planned for next iteration.\n• Opportunity for data-driven personalization (habit recommendations, AI journaling prompts).\n\nGobi taught me how emotional design can mitigate resistance. By merging gamification with progress tracking, we built a system where self-improvement feels celebratory, not corrective. The key was pairing the mascot\'s personality with genuine progress metrics—making the app both emotionally engaging and functionally supportive.',
+        body: 'Testing Impact: 4 participant usability sessions validated core flows. All users described Gobi as "fun, human, and motivating." Emotional feedback ("Gobi\'s disappointed face") improved self-awareness. Gamification balanced accountability, reducing stigma.\n\nReflection & Next Steps: Further testing could refine social and community features (friend challenges, leaderboard visibility). Expanded accessibility and adaptive challenge scaling planned for next iteration. Opportunity for data-driven personalization (habit recommendations, AI journaling prompts).\n\nGobi taught me how emotional design can mitigate resistance. By merging gamification with progress tracking, we built a system where self-improvement feels celebratory, not corrective. The key was pairing the mascot\'s personality with genuine progress metrics—making the app both emotionally engaging and functionally supportive.',
       },
     ],
     gallery: [
@@ -167,10 +167,6 @@ export const caseStudies: CaseStudy[] = [
         caption: 'Final Concept: Challenge-based sobriety app with personalized adventure',
       },
     ],
-    outcomes: {
-      metrics: '4 participant usability sessions validated core flows. All users described Gobi as "fun, human, and motivating." Emotional feedback ("Gobi\'s disappointed face") improved self-awareness. Gamification balanced accountability, reducing stigma.',
-      learnings: 'Gobi taught me how emotional design can mitigate resistance. By merging gamification with progress tracking, we built a system where self-improvement feels celebratory, not corrective. The key was pairing the mascot\'s personality with genuine progress metrics—making the app both emotionally engaging and functionally supportive.',
-    },
   },
   {
     slug: 'spotify-ux-audit',
