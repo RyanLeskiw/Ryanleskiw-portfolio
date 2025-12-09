@@ -106,15 +106,6 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
           ))}
         </div>
 
-        {/* Outcomes & Learnings */}
-        <section className="mt-16 pt-12 border-t border-gray-800">
-          <h2 className="text-2xl font-bold text-text-light mb-6">Outcomes & Learnings</h2>
-          <div className="space-y-6">
-            <p className="text-gray-400">{study.outcomes.metrics}</p>
-            <p className="text-gray-400">{study.outcomes.learnings}</p>
-          </div>
-        </section>
-
         {/* Image Gallery */}
         {study.gallery && study.gallery.length > 0 && (
           <section className="mt-16 pt-12 border-t border-gray-800">
