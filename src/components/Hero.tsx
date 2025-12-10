@@ -4,21 +4,14 @@ export default function Hero() {
   return (
     <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-bg-dark">
       <div className="max-w-container mx-auto text-center">
-        {/* Logo */}
-        <div className="w-24 h-24 mx-auto mb-8">
-          <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" fill="none" className="w-full h-full">
-            <g stroke="#10b981" strokeWidth="35" strokeLinecap="round" strokeLinejoin="round">
-              {/* K letter */}
-              <path d="M 80 80 L 80 280" />
-              <path d="M 80 180 L 200 80" />
-              <path d="M 80 180 L 200 280" />
-              
-              {/* L letter */}
-              <path d="M 260 80 L 260 280 L 320 280" />
-              
-              {/* Decorative swash/flourish underneath */}
-              <path d="M 100 320 Q 200 340 300 320" strokeWidth="28" />
-            </g>
+        {/* RL Logo */}
+        <div className="w-32 h-32 mx-auto mb-8">
+          <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#10b981" strokeWidth="12" strokeLinecap="round" strokeLinejoin="round">
+            {/* R */}
+            <path d="M 40 60 L 40 240 M 40 60 L 90 60 Q 110 60 110 80 Q 110 100 90 100 L 40 100" />
+            <path d="M 90 100 L 130 240" />
+            {/* L */}
+            <path d="M 160 60 L 160 240 L 190 240" />
           </svg>
         </div>
 
