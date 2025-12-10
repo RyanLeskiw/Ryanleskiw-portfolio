@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-bg-dark">
       <div className="max-w-container mx-auto text-center">
         {/* RL Logo */}
-        <div style={{ width: '250px', height: '250px' }} className="mx-auto pb-12">
+        <div style={{ width: '200px', height: '200px' }} className="mx-auto pb-12">
           <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 889 1027.7" className="w-full h-full">
             <defs>
               <style>{`.cls-1 { fill: #1bb680; stroke-width: 0px; }`}</style>
