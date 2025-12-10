@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-bg-dark">
       <div className="max-w-container mx-auto text-center">
         {/* RL Logo */}
-        <div className="w-32 h-32 mx-auto mb-8">
+        <div className="w-48 h-48 mx-auto mb-8">
           <img src="/assets/rl-logo.svg" alt="RL Logo" className="w-full h-full" />
         </div>
 
