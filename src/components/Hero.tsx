@@ -6,13 +6,7 @@ export default function Hero() {
       <div className="max-w-container mx-auto text-center">
         {/* RL Logo */}
         <div className="w-32 h-32 mx-auto mb-8">
-          <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#10b981" strokeWidth="12" strokeLinecap="round" strokeLinejoin="round">
-            {/* R */}
-            <path d="M 40 60 L 40 240 M 40 60 L 90 60 Q 110 60 110 80 Q 110 100 90 100 L 40 100" />
-            <path d="M 90 100 L 130 240" />
-            {/* L */}
-            <path d="M 160 60 L 160 240 L 190 240" />
-          </svg>
+          <img src="/assets/rl-logo.svg" alt="RL Logo" className="w-full h-full" />
         </div>
 
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-text-light mb-6 max-w-3xl mx-auto">
