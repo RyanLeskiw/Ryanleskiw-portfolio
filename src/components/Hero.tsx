@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-bg-dark">
       <div className="max-w-container mx-auto text-center">
         {/* RL Logo */}
-        <div style={{ width: '500px', height: '500px' }} className="mx-auto mb-8">
+        <div style={{ width: '500px', height: '500px' }} className="mx-auto">
           <img src="/assets/rl-logo.svg" alt="RL Logo" className="w-full h-full" />
         </div>
 
