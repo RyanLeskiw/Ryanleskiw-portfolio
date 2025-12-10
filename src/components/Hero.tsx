@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Hero() {
   return (
-    <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-bg-dark">
+    <section className="pt-16 pb-20 px-4 sm:px-6 lg:px-8 bg-bg-dark">
       <div className="max-w-container mx-auto text-center">
         {/* RL Logo */}
         <div style={{ width: '200px', height: '200px' }} className="mx-auto pb-12">
