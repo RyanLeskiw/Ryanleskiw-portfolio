@@ -167,6 +167,10 @@ export const caseStudies: CaseStudy[] = [
         caption: 'Final Concept: Challenge-based sobriety app with personalized adventure',
       },
     ],
+    outcomes: {
+      metrics: '4 participant usability sessions validated core flows. All users described Gobi as "fun, human, and motivating." Emotional feedback improved self-awareness. Gamification balanced accountability, reducing stigma.',
+      learnings: 'Gobi taught me how emotional design can mitigate resistance. By merging gamification with progress tracking, we built a system where self-improvement feels celebratory, not corrective.',
+    },
   },
   {
     slug: 'spotify-ux-audit',
@@ -241,5 +245,9 @@ export const caseStudies: CaseStudy[] = [
         caption: 'Vision and key results for platform improvement',
       },
     ],
+    outcomes: {
+      metrics: 'Although this project concluded at the conceptual stage, it provided valuable insight into how platform familiarity shapes discovery behaviour. Users didn\'t resist new features; they simply needed better framing and visibility.',
+      learnings: 'This audit deepened my understanding of how UX evaluation can uncover both functional and emotional pain points. I learned how to move beyond surface-level usability and look for meaning and understanding—not just how users interact, but why.',
+    },
   },
 ]
