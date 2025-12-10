@@ -42,12 +42,6 @@ body {
   font-family: 'Kalam', cursive;
 }
 
-/* Futuristic font utility */
-.font-futuristic {
-  font-family: 'Orbitron', sans-serif;
-  letter-spacing: 0.05em;
-}
-
 /* Stippled dot pattern gradient for homepage */
 .stipple-bg {
   position: fixed;

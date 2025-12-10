@@ -22,6 +22,9 @@ const config: Config = {
       maxWidth: {
         container: '1200px',
       },
+      letterSpacing: {
+        'futuristic': '0.05em',
+      },
     },
   },
   plugins: [],
