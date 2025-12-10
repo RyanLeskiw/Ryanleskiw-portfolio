@@ -7,7 +7,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 w-full z-50 backdrop-blur-md bg-gradient-to-b from-black/40 to-black/20 border-b border-green-500/20">
+    <header className="fixed top-0 w-full z-50 backdrop-blur-xl bg-gradient-to-b from-black/40 to-black/20 border-b border-green-500/20">
       <nav className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         <Link href="/" className="text-text-light font-bold text-xl">
           Ryan Leskiw
@@ -39,7 +39,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="absolute top-full left-0 w-full backdrop-blur-md bg-gradient-to-b from-black/40 to-black/20 border-b border-green-500/20 md:hidden">
+          <div className="absolute top-full left-0 w-full backdrop-blur-xl bg-gradient-to-b from-black/40 to-black/20 border-b border-green-500/20 md:hidden">
             <div className="flex flex-col gap-4 p-4">
               <Link href="/work" className="text-text-light hover:text-accent-green transition-colors">
                 Work
