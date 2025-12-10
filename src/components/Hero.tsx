@@ -4,9 +4,22 @@ export default function Hero() {
   return (
     <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-bg-dark">
       <div className="max-w-container mx-auto text-center">
-        {/* Placeholder for headshot */}
-        <div className="w-24 h-24 rounded-full bg-gray-800 mx-auto mb-8 flex items-center justify-center">
-          <span className="text-gray-600">Headshot</span>
+        {/* Logo */}
+        <div className="w-24 h-24 mx-auto mb-8">
+          <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" fill="none" className="w-full h-full">
+            <g stroke="#10b981" strokeWidth="35" strokeLinecap="round" strokeLinejoin="round">
+              {/* K letter */}
+              <path d="M 80 80 L 80 280" />
+              <path d="M 80 180 L 200 80" />
+              <path d="M 80 180 L 200 280" />
+              
+              {/* L letter */}
+              <path d="M 260 80 L 260 280 L 320 280" />
+              
+              {/* Decorative swash/flourish underneath */}
+              <path d="M 100 320 Q 200 340 300 320" strokeWidth="28" />
+            </g>
+          </svg>
         </div>
 
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-text-light mb-6 max-w-3xl mx-auto">
