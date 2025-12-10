@@ -52,7 +52,7 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
 
         {/* Title & Meta */}
         <header className="mb-12 border-b border-gray-800 pb-8">
-          <h1 className="text-4xl sm:text-5xl font-bold text-text-light mb-4">{study.title}</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold font-futuristic text-text-light mb-4">{study.title}</h1>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
             <div>
               <p className="text-gray-500 mb-1">Role</p>
@@ -78,7 +78,7 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
           {study.sections.map((section, index) => (
             <div key={index}>
               <section>
-                <h2 className="text-2xl font-bold text-text-light mb-4">{section.heading}</h2>
+                <h2 className="text-2xl font-bold font-futuristic text-text-light mb-4">{section.heading}</h2>
                 <p className="text-gray-400 leading-relaxed">{section.body}</p>
 
                 {/* Insert a pull quote after Research & Insights for Headspace */}
@@ -109,7 +109,7 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
         {/* Image Gallery */}
         {study.gallery && study.gallery.length > 0 && (
           <section className="mt-16 pt-12 border-t border-gray-800">
-            <h2 className="text-2xl font-bold text-text-light mb-8">Project Gallery</h2>
+            <h2 className="text-2xl font-bold font-futuristic text-text-light mb-8">Project Gallery</h2>
             <ImageGallery images={study.gallery} columns={2} />
           </section>
         )}

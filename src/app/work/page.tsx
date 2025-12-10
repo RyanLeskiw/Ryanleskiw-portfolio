@@ -13,7 +13,7 @@ export default function WorkPage() {
       <div className="stipple-bg" aria-hidden="true"></div>
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-bg-dark">
         <div className="max-w-container mx-auto">
-          <h1 className="text-4xl sm:text-5xl font-bold text-text-light mb-6">Work</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold font-futuristic text-text-light mb-6">Work</h1>
           <p className="text-gray-400 text-lg mb-16 max-w-2xl">
           A selection of case studies showcasing my research-driven design process and outcomes.
           </p>

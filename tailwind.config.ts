@@ -17,6 +17,7 @@ const config: Config = {
       fontFamily: {
         'slab-serif': ['"Courier Prime"', 'serif'],
         'sans': ['"Inter"', 'sans-serif'],
+        'futuristic': ['"Michroma"', 'sans-serif'],
       },
       maxWidth: {
         container: '1200px',

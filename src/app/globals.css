@@ -3,7 +3,7 @@
 @import 'tailwindcss/utilities';
 
 /* Custom font imports */
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inter:wght@400;500;600;700&family=Kalam:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inter:wght@400;500;600;700&family=Kalam:wght@400;700&family=Michroma&display=swap');
 
 /* Smooth scrolling */
 html {
@@ -40,6 +40,12 @@ body {
 /* Handwritten font utility */
 .font-hand {
   font-family: 'Kalam', cursive;
+}
+
+/* Futuristic font utility */
+.font-futuristic {
+  font-family: 'Michroma', sans-serif;
+  letter-spacing: 0.05em;
 }
 
 /* Stippled dot pattern gradient for homepage */
