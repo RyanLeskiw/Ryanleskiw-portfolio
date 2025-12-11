@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     description: 'Portfolio showcasing UX research and design case studies.',
     type: 'website',
   },
+  other: {
+    'preconnect': 'https://fonts.googleapis.com',
+  },
 }
 
 export default function RootLayout({
