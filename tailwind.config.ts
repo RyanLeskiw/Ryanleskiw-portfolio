@@ -17,7 +17,7 @@ const config: Config = {
       fontFamily: {
         'slab-serif': ['"Courier Prime"', 'serif'],
         'sans': ['"Inter"', 'sans-serif'],
-        'futuristic': ['"Orbitron"', 'sans-serif'],
+        'futuristic': ['"IBM Plex Mono"', '"Courier New"', 'monospace'],
       },
       maxWidth: {
         container: '1200px',
