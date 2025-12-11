@@ -3,29 +3,7 @@
 @import 'tailwindcss/utilities';
 
 /* Custom font imports */
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inter:wght@400;500;600;700&family=Kalam:wght@400;700&display=swap');
-
-/* Local Orbitron font faces */
-@font-face {
-  font-family: 'Orbitron';
-  src: url('/fonts/Orbitron-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Orbitron';
-  src: url('/fonts/Orbitron-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Orbitron';
-  src: url('/fonts/Orbitron-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inter:wght@400;500;600;700&family=Kalam:wght@400;700&family=Orbitron:wght@400;700;900&display=swap');
 
 /* Smooth scrolling */
 html {
