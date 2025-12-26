@@ -70,3 +70,9 @@ a {
   font-family: 'Michroma', sans-serif;
   letter-spacing: 0.05em;
 }
+
+/* Apply Michroma to all headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Michroma', sans-serif;
+  letter-spacing: 0.05em;
+}
