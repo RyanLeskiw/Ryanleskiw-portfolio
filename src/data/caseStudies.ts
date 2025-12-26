@@ -119,7 +119,7 @@ export const caseStudies: CaseStudy[] = [
       {
         heading: 'Ideation & Architecture',
         body: 'Through iterative workshops and feature pitches, the team distilled early discovery into one clear direction: Sobriety, but gamified.\n\nWe came up with Gobi, a goblin companion embodying self-growth through imperfection.\n\nCore features were mapped across three pillars:\n\nGamification, Tracking, Emotional Support.',
-        image: '/assets/gobi/ideation-screens.webp',
+        image: '/assets/gobi/gobi-version-1.webp',
         imageAlt: 'Ideation and feature mapping',
         imageCaption: 'Feature mapping across three core pillars with achievement screens and mascot customization concepts',
       },
@@ -133,7 +133,7 @@ export const caseStudies: CaseStudy[] = [
       {
         heading: 'Final Concept',
         body: 'Gobi is a challenge-based sobriety app that turns behavior change into a personalized adventure.\n\nThrough avatar evolution, achievements, and reflective journaling, users see tangible rewards for healthy habits, both emotional and measurable.\n\nKey Features:\n• Gamified Tracking: Avatar growth, achievements, streaks, and GobCoins.\n• Health Insights: Sleep, heart rate, money saved, and weekly progress.\n• Reflections: Guided prompts that transform self-awareness into earned rewards.\n• Personalization: Outfits, colors, and "Goblin moods" that evolve with progress.\n• Smart Integration: Optional biometric sync for data-driven insights.\n\nIdeal Scenario - Alex\'s Journey: Alex isn\'t quitting—she\'s only cutting back. After choosing "One-Drink-a-Week," she logs moods, completes reflections, earns coins, customizes her goblin, and sees her saved money climb. Gobi cheers her on, celebrating every small victory with humor and empathy.',
-        image: '/assets/gobi/final-concept-screens.webp',
+        image: '/assets/gobi/final-concept.webp',
         imageAlt: 'Final concept app screens',
         imageCaption: 'Complete user journey: Onboarding, challenges, achievements, reflections, and customization',
       },
@@ -144,17 +144,17 @@ export const caseStudies: CaseStudy[] = [
     ],
     gallery: [
       {
-        src: '/assets/gobi/version-1.webp',
+        src: '/assets/gobi/gobi-version-1.webp',
         alt: 'Gobi Version 1 Wireframes',
         caption: 'Version 1: Early wireframes exploring dashboard, tracking, and mascot customization',
       },
       {
-        src: '/assets/gobi/version-2.webp',
+        src: '/assets/gobi/gobi-version-2.webp',
         alt: 'Gobi Version 2 Refined Design',
         caption: 'Version 2: Refined design with improved navigation and visual hierarchy',
       },
       {
-        src: '/assets/gobi/onboarding-flow.webp',
+        src: '/assets/gobi/prototype-flow.webp',
         alt: 'Complete Onboarding Flow',
         caption: 'Comprehensive onboarding screens: Welcome, Registration, Profile Setup, and Progress Tracking',
       },
