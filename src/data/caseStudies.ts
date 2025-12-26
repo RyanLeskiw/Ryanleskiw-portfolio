@@ -112,18 +112,30 @@ export const caseStudies: CaseStudy[] = [
       {
         heading: 'Research & Insights',
         body: 'Methods:\n• 7 initial discovery interviews\n• 4 Observational usability testing (Zoom & in-person)\n• Secondary discovery research\n• Thematic coding & affinity mapping\n• Alcohol and alcohol-free space observational research (in-person)\n\nTop Insights:\n• Users wanted progress, not perfection—sobriety apps often felt punitive.\n• A mascot or emotional companion made behavior change feel approachable.\n• Gamified elements like achievements and avatar customization improved engagement.\n• Tracking needed to feel private, simple, and encouraging, not judgmental.\n• Personal data (health stats, money saved) increased a sense of control.\n\nKey Finding: Gamification, when paired with humor and emotional design, helps users approach serious topics—like alcohol moderation—with self-compassion and consistency.',
+        image: '/assets/gobi/affinity-map.webp',
+        imageAlt: 'Usability Affinity Map',
+        imageCaption: 'Comprehensive affinity map synthesizing research across four phases: Learnability & Onboarding, Navigation & System Visibility, Emotional Engagement & Mascot Appeal, and more',
       },
       {
         heading: 'Ideation & Architecture',
         body: 'Through iterative workshops and feature pitches, the team distilled early discovery into one clear direction: Sobriety, but gamified.\n\nWe came up with Gobi, a goblin companion embodying self-growth through imperfection.\n\nCore features were mapped across three pillars:\n\nGamification, Tracking, Emotional Support.',
+        image: '/assets/gobi/ideation-screens.webp',
+        imageAlt: 'Ideation and feature mapping',
+        imageCaption: 'Feature mapping across three core pillars with achievement screens and mascot customization concepts',
       },
       {
         heading: 'Design Evolution',
         body: 'User testing exposed both clarity gaps and emotional wins:\n\nNavigation: Icon ambiguity resolved via clearer titles and simplified bottom bar.\n\nCustomization: Loved changing Gobi\'s outfit, but wanted previews before spending coins. Implemented preview overlay.\n\nOnboarding: Users found setup intuitive and friendly. Kept conversational tone.\n\nReflections Feature: Some users "farmed" coins with empty entries. Added cooldowns and reward caps.\n\nLogging a drink: Confusion between "Manage Challenge" and "Log Drink." Revised button labels and visual hierarchy.\n\nFeedback system: Users responded emotionally to Gobi\'s reactions ("Oh no, I\'ve disappointed my Gobi"). Retained and refined emotional feedback.',
+        image: '/assets/gobi/refinements.webp',
+        imageAlt: 'Design refinements from user testing',
+        imageCaption: 'Before and After refinements: Profile and Reflections screens improved through iterative user testing',
       },
       {
         heading: 'Final Concept',
         body: 'Gobi is a challenge-based sobriety app that turns behavior change into a personalized adventure.\n\nThrough avatar evolution, achievements, and reflective journaling, users see tangible rewards for healthy habits, both emotional and measurable.\n\nKey Features:\n• Gamified Tracking: Avatar growth, achievements, streaks, and GobCoins.\n• Health Insights: Sleep, heart rate, money saved, and weekly progress.\n• Reflections: Guided prompts that transform self-awareness into earned rewards.\n• Personalization: Outfits, colors, and "Goblin moods" that evolve with progress.\n• Smart Integration: Optional biometric sync for data-driven insights.\n\nIdeal Scenario - Alex\'s Journey: Alex isn\'t quitting—she\'s only cutting back. After choosing "One-Drink-a-Week," she logs moods, completes reflections, earns coins, customizes her goblin, and sees her saved money climb. Gobi cheers her on, celebrating every small victory with humor and empathy.',
+        image: '/assets/gobi/final-concept-screens.webp',
+        imageAlt: 'Final concept app screens',
+        imageCaption: 'Complete user journey: Onboarding, challenges, achievements, reflections, and customization',
       },
       {
         heading: 'Outcomes & Learnings',
@@ -132,39 +144,24 @@ export const caseStudies: CaseStudy[] = [
     ],
     gallery: [
       {
-        src: '/assets/gobi/goals-metrics.webp',
-        alt: 'Goals and Success Metrics',
-        caption: 'Goals & Success Metrics: Core Goal and Success Indicators',
+        src: '/assets/gobi/version-1.webp',
+        alt: 'Gobi Version 1 Wireframes',
+        caption: 'Version 1: Early wireframes exploring dashboard, tracking, and mascot customization',
       },
       {
-        src: '/assets/gobi/affinity-map.webp',
-        alt: 'Usability Affinity Map',
-        caption: 'Usability Affinity Map: Comprehensive research synthesis across four phases',
+        src: '/assets/gobi/version-2.webp',
+        alt: 'Gobi Version 2 Refined Design',
+        caption: 'Version 2: Refined design with improved navigation and visual hierarchy',
       },
       {
-        src: '/assets/gobi/personas.webp',
-        alt: 'Guiding Personas',
-        caption: '1 of our Guiding Personas: Based on interviews and observational research',
+        src: '/assets/gobi/onboarding-flow.webp',
+        alt: 'Complete Onboarding Flow',
+        caption: 'Comprehensive onboarding screens: Welcome, Registration, Profile Setup, and Progress Tracking',
       },
       {
-        src: '/assets/gobi/ideation.webp',
-        alt: 'Ideation & Architecture',
-        caption: 'Ideation & Architecture: Feature Design Across Three Core Pillars',
-      },
-      {
-        src: '/assets/gobi/evolution.webp',
-        alt: 'Design Evolution',
-        caption: 'Design Evolution: Wireframes → Mid-Fi → High-Fi → Polished Prototype',
-      },
-      {
-        src: '/assets/gobi/refinements.webp',
-        alt: 'Refinements Made',
-        caption: 'Some Refinements Made: Before & After iterations from user testing',
-      },
-      {
-        src: '/assets/gobi/final-concept.webp',
-        alt: 'Final Concept',
-        caption: 'Final Concept: Challenge-based sobriety app with personalized adventure',
+        src: '/assets/gobi/welcome-screen.webp',
+        alt: 'Welcome Screen',
+        caption: 'Welcome onboarding screen introducing Gobi mascot and app purpose',
       },
     ],
     outcomes: {
