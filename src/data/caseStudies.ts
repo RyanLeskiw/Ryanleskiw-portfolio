@@ -103,7 +103,7 @@ export const caseStudies: CaseStudy[] = [
     role: 'Secondary Discovery Researcher · Interviewer · Interview Notetaker · Observational Researcher · Collaborative Insight Analyst · Prototype Designer · Usability Analyst · Collaborative Slide Designer',
     team: ['Kayla Danio', 'Fernanda Alonso Castrejon', 'Kateryna Kravchenko', 'Ryan Leskiw'],
     thumbnailImage: '/assets/gobi/thumbnail.webp',
-    heroImage: '/assets/gobi/hero.webp',
+    heroImage: '/assets/gobi/gobi-titleshot.webp',
     sections: [
       {
         heading: 'Context & Problem',
