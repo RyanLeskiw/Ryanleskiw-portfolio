@@ -67,12 +67,14 @@ a {
 
 /* Feature font - Michroma */
 .font-feature {
-  font-family: 'Michroma', sans-serif;
-  letter-spacing: 0.05em;
+  font-family: 'Michroma', sans-serif !important;
+  letter-spacing: 0.05em !important;
+  font-weight: 400 !important;
 }
 
 /* Apply Michroma to all headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Michroma', sans-serif;
-  letter-spacing: 0.05em;
+  font-family: 'Michroma', sans-serif !important;
+  letter-spacing: 0.05em !important;
+  font-weight: 400 !important;
 }
