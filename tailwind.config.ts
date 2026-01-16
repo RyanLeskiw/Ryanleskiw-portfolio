@@ -15,9 +15,9 @@ const config: Config = {
         'accent-green-light': '#58c77a',
       },
       fontFamily: {
-        'slab-serif': ['"Courier Prime"', 'serif'],
-        'sans': ['"Inter"', 'sans-serif'],
-        'futuristic': ['"IBM Plex Mono"', '"Courier New"', 'monospace'],
+        'slab-serif': ['var(--font-courier-prime)', 'serif'],
+        'sans': ['var(--font-inter)', 'sans-serif'],
+        'futuristic': ['var(--font-ibm-plex-mono)', '"Courier New"', 'monospace'],
       },
       maxWidth: {
         container: '1200px',

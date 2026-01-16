@@ -2,8 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* Custom font imports - Other fonts */
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=IBM+Plex+Mono:wght@400;600;700&family=Inter:wght@400;500;600;700&family=Kalam:wght@400;700&family=Michroma&display=swap');
+/* Fonts are now loaded via next/font in layout.tsx - no need for Google Fonts CDN */
 
 /* Smooth scrolling */
 html {
@@ -39,7 +38,7 @@ body {
 
 /* Handwritten font utility */
 .font-hand {
-  font-family: 'Kalam', cursive;
+  font-family: var(--font-kalam), cursive;
 }
 
 /* Stippled dot pattern gradient for homepage */
@@ -67,14 +66,14 @@ a {
 
 /* Feature font - Michroma */
 .font-feature {
-  font-family: 'Michroma', sans-serif !important;
+  font-family: var(--font-michroma), sans-serif !important;
   letter-spacing: 0.05em !important;
   font-weight: 400 !important;
 }
 
 /* Apply Michroma to all headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Michroma', sans-serif !important;
+  font-family: var(--font-michroma), sans-serif !important;
   letter-spacing: 0.05em !important;
   font-weight: 400 !important;
 }

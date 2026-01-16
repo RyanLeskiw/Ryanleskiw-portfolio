@@ -6,6 +6,17 @@ on:
       - main
       - master
 
+# Allow GitHub Actions to deploy to Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -24,6 +35,9 @@ jobs:
         run: npm ci
 
       - name: Build
+        env:
+          # Set Formspree endpoint if configured as secret
+          NEXT_PUBLIC_FORMSPREE_ENDPOINT: ${{ secrets.NEXT_PUBLIC_FORMSPREE_ENDPOINT }}
         run: npm run build
 
       - name: Deploy to GitHub Pages
@@ -32,3 +46,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
+          # If deploying to a project repository (not username.github.io), uncomment:
+          # cname: yourdomain.com

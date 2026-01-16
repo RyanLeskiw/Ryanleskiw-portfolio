@@ -22,18 +22,30 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setStatus('submitting')
+    setErrorMessage('')
+
+    // Use Formspree for static site hosting (GitHub Pages)
+    // Get your Formspree endpoint from https://formspree.io
+    // For production, set NEXT_PUBLIC_FORMSPREE_ENDPOINT in your environment
+    const formspreeEndpoint = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT || 'https://formspree.io/f/YOUR_FORM_ID'
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch(formspreeEndpoint, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json',
         },
-        body: JSON.stringify(formState),
+        body: JSON.stringify({
+          name: formState.name,
+          email: formState.email,
+          message: formState.message,
+        }),
       })
 
       if (!response.ok) {
-        throw new Error('Failed to send message')
+        const errorData = await response.json().catch(() => ({}))
+        throw new Error(errorData.error || 'Failed to send message')
       }
 
       setStatus('success')
@@ -41,7 +53,11 @@ export default function ContactForm() {
       setTimeout(() => setStatus('idle'), 5000)
     } catch (error) {
       setStatus('error')
-      setErrorMessage('Failed to send message. Please try again.')
+      setErrorMessage(
+        error instanceof Error 
+          ? error.message 
+          : 'Failed to send message. Please try again.'
+      )
       setTimeout(() => setStatus('idle'), 5000)
     }
   }
