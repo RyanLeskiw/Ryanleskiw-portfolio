@@ -25,12 +25,14 @@ export default function ContactForm() {
     setErrorMessage('')
 
     // Use Formspree for static site hosting (GitHub Pages)
-    // Replace 'YOUR_FORM_ID' below with your actual Formspree form ID
     // Get your Formspree endpoint from https://formspree.io
     const formspreeEndpoint = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT || 'https://formspree.io/f/YOUR_FORM_ID'
     
-    // If you want to hardcode it directly, replace the line above with:
-    // const formspreeEndpoint = 'https://formspree.io/f/YOUR_ACTUAL_FORM_ID'
+    // Debug: Log the endpoint being used (for troubleshooting)
+    console.log('Formspree endpoint:', formspreeEndpoint.replace(/\/f\/[^/]+/, '/f/***')) // Hide actual form ID in logs
+    if (formspreeEndpoint.includes('YOUR_FORM_ID')) {
+      console.error('Formspree endpoint not configured! Please set NEXT_PUBLIC_FORMSPREE_ENDPOINT')
+    }
 
     try {
       const response = await fetch(formspreeEndpoint, {
@@ -46,9 +48,12 @@ export default function ContactForm() {
         }),
       })
 
+      const responseData = await response.json().catch(() => ({}))
+
       if (!response.ok) {
-        const errorData = await response.json().catch(() => ({}))
-        throw new Error(errorData.error || 'Failed to send message')
+        // Formspree returns specific error messages
+        const errorMsg = responseData.error || responseData.message || `Error ${response.status}: ${response.statusText}`
+        throw new Error(errorMsg)
       }
 
       setStatus('success')
@@ -56,11 +61,19 @@ export default function ContactForm() {
       setTimeout(() => setStatus('idle'), 5000)
     } catch (error) {
       setStatus('error')
-      setErrorMessage(
-        error instanceof Error 
-          ? error.message 
-          : 'Failed to send message. Please try again.'
-      )
+      let errorMsg = 'Failed to send message. Please try again.'
+      
+      if (error instanceof Error) {
+        errorMsg = error.message
+        // Provide helpful error messages
+        if (error.message.includes('not found') || error.message.includes('404')) {
+          errorMsg = 'Form not found. Please check your Formspree endpoint configuration.'
+        } else if (error.message.includes('429')) {
+          errorMsg = 'Too many requests. Please try again later.'
+        }
+      }
+      
+      setErrorMessage(errorMsg)
       setTimeout(() => setStatus('idle'), 5000)
     }
   }
