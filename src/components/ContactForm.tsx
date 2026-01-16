@@ -25,14 +25,9 @@ export default function ContactForm() {
     setErrorMessage('')
 
     // Use Formspree for static site hosting (GitHub Pages)
-    // Get your Formspree endpoint from https://formspree.io
-    const formspreeEndpoint = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT || 'https://formspree.io/f/YOUR_FORM_ID'
-    
-    // Debug: Log the endpoint being used (for troubleshooting)
-    console.log('Formspree endpoint:', formspreeEndpoint.replace(/\/f\/[^/]+/, '/f/***')) // Hide actual form ID in logs
-    if (formspreeEndpoint.includes('YOUR_FORM_ID')) {
-      console.error('Formspree endpoint not configured! Please set NEXT_PUBLIC_FORMSPREE_ENDPOINT')
-    }
+    // Formspree endpoint is hardcoded for immediate functionality
+    // Can also be set via NEXT_PUBLIC_FORMSPREE_ENDPOINT environment variable
+    const formspreeEndpoint = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT || 'https://formspree.io/f/xykkkzqe'
 
     try {
       const response = await fetch(formspreeEndpoint, {
