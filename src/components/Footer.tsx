@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
@@ -9,6 +11,9 @@ export default function Footer() {
             <p>&copy; {currentYear} Ryan Leskiw. All rights reserved.</p>
           </div>
           <div className="flex gap-6">
+            <Link href="/contact" className="text-text-light hover:text-accent-green transition-colors font-feature">
+              Contact
+            </Link>
             <a href="https://www.linkedin.com/in/ryanleskiw" target="_blank" rel="noopener noreferrer" className="text-text-light hover:text-accent-green transition-colors font-feature">
               LinkedIn
             </a>

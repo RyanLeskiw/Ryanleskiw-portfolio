@@ -8,7 +8,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 w-full z-50 backdrop-blur-xl bg-gradient-to-b from-black/40 to-black/20 border-b border-green-500/20">
-      <nav className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+      <nav className="max-w-container mx-auto pl-4 sm:pl-4 lg:pl-6 pr-4 sm:pr-6 lg:pr-8 py-4 flex items-center justify-between">
         <Link href="/" className="text-text-light font-bold text-xl font-feature">
           Ryan Leskiw
         </Link>
