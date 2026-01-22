@@ -3,6 +3,7 @@ import { Inter, IBM_Plex_Mono, Courier_Prime, Kalam, Michroma, Lora } from 'next
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import StructuredData from '@/components/StructuredData'
 
 // Optimize fonts with next/font
 const inter = Inter({
@@ -48,11 +49,24 @@ const lora = Lora({
 
 export const metadata: Metadata = {
   title: 'Ryan Leskiw — UX Researcher & Designer',
-  description: 'Portfolio showcasing UX research and design case studies.',
+  description: 'Ryan Leskiw is a UX researcher and designer passionate about understanding user needs and creating thoughtful solutions through research-driven design.',
+  keywords: ['Ryan Leskiw', 'UX Researcher', 'UX Designer', 'User Experience', 'UX Research', 'Portfolio'],
+  authors: [{ name: 'Ryan Leskiw' }],
+  creator: 'Ryan Leskiw',
   openGraph: {
     title: 'Ryan Leskiw — UX Researcher & Designer',
-    description: 'Portfolio showcasing UX research and design case studies.',
+    description: 'Portfolio showcasing UX research and design case studies by Ryan Leskiw.',
     type: 'website',
+    siteName: 'Ryan Leskiw Portfolio',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ryan Leskiw — UX Researcher & Designer',
+    description: 'Portfolio showcasing UX research and design case studies.',
+  },
+  metadataBase: new URL('https://rleskiw.com'),
+  alternates: {
+    canonical: '/',
   },
 }
 
@@ -64,6 +78,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${ibmPlexMono.variable} ${courierPrime.variable} ${kalam.variable} ${michroma.variable} ${lora.variable}`}>
       <body className="bg-bg-dark text-text-light font-sans">
+        <StructuredData />
         <Header />
         <main className="pt-16">{children}</main>
         <Footer />

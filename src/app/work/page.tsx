@@ -4,7 +4,12 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Work — Ryan Leskiw',
-  description: 'View my UX research and design case studies.',
+  description: 'Explore UX research and design case studies by Ryan Leskiw, including Headspace Sleep Mood, Gobi gamified sobriety app, and Spotify UX audit projects.',
+  openGraph: {
+    title: 'Work — Ryan Leskiw',
+    description: 'Explore UX research and design case studies by Ryan Leskiw.',
+    type: 'website',
+  },
 }
 
 export default function WorkPage() {

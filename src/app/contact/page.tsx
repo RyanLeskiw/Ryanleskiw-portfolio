@@ -3,7 +3,12 @@ import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
   title: 'Contact — Ryan Leskiw',
-  description: 'Get in touch with me.',
+  description: 'Get in touch with Ryan Leskiw for collaboration opportunities, project inquiries, or to discuss UX research and design.',
+  openGraph: {
+    title: 'Contact — Ryan Leskiw',
+    description: 'Get in touch with Ryan Leskiw for collaboration opportunities or project inquiries.',
+    type: 'website',
+  },
 }
 
 export default function ContactPage() {

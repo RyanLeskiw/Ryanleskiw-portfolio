@@ -21,7 +21,12 @@ export async function generateMetadata({ params }: CaseStudyPageProps): Promise<
 
   return {
     title: `${study.title} — Ryan Leskiw`,
-    description: study.summary,
+    description: `${study.summary} A case study by Ryan Leskiw.`,
+    openGraph: {
+      title: `${study.title} — Ryan Leskiw`,
+      description: study.summary,
+      type: 'article',
+    },
   }
 }
 
