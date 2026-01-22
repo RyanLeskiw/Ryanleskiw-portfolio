@@ -98,11 +98,11 @@ export const caseStudies: CaseStudy[] = [
     slug: 'gobi-gamified-sobriety',
     title: 'Gobi — Gamified Sobriety',
     summary: 'Designing a gamified sobriety app that turns behavior change into a personalized adventure through emotional design and playful interaction.',
-    projectType: 'Full-term UX Project — Discovery to Polished Prototype',
+    projectType: 'Student Project: Discovery to Polished Prototype',
     timeline: '2.5–3 months',
     role: 'Secondary Discovery Researcher · Interviewer · Interview Notetaker · Observational Researcher · Collaborative Insight Analyst · Prototype Designer · Usability Analyst · Collaborative Slide Designer',
     team: ['Kayla Danio', 'Fernanda Alonso Castrejon', 'Kateryna Kravchenko', 'Ryan Leskiw'],
-    thumbnailImage: '/assets/gobi/thumbnail.webp',
+    thumbnailImage: '/assets/gobi/gobi-titleshot.webp',
     heroImage: '/assets/gobi/gobi-titleshot.webp',
     sections: [
       {
