@@ -28,12 +28,10 @@ export default function Hero() {
         </div>
 
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-feature text-text-light mb-6 max-w-3xl mx-auto leading-tight">
-          A Creative, Collaborative,
-          <br />
-          UX Designer:
+          A Creative, Collaborative UX Designer
           <br />
           <span className="text-3xl sm:text-4xl lg:text-5xl">
-            from research to resolution
+            From Research To Resolution
           </span>
         </h1>
 
