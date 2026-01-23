@@ -27,7 +27,7 @@ export default function Hero() {
           </svg>
         </div>
 
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-feature text-text-light mb-6 max-w-5xl mx-auto leading-tight px-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-feature text-text-light mb-6 max-w-6xl mx-auto leading-tight px-4">
           A Creative, Collaborative UX Designer
           <br />
           <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
