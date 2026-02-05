@@ -43,7 +43,7 @@ export default function Hero() {
 
         <Link
           href="/work"
-          className="inline-block px-8 py-3 bg-green-500 text-white font-bold rounded hover:bg-green-800 transition-colors"
+          className="inline-block px-8 py-3 bg-white text-black font-bold rounded hover:bg-gray-200 transition-colors"
         >
           View My Work
         </Link>

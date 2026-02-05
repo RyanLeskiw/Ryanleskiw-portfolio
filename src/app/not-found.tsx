@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function NotFound() {
   return (
@@ -15,11 +15,11 @@ export default function NotFound() {
         </p>
         <Link
           href="/"
-          className="inline-block px-8 py-3 bg-green-500 text-white font-bold rounded hover:bg-green-800 transition-colors"
+          className="inline-block px-8 py-3 bg-white text-black font-bold rounded hover:bg-gray-200 transition-colors"
         >
           Return Home
         </Link>
       </div>
     </div>
-  )
+  );
 }

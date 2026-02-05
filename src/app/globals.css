@@ -19,12 +19,12 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(45, 90, 61);
+  background: rgb(90, 90, 90);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(55, 110, 75);
+  background: rgb(120, 120, 120);
 }
 
 /* Prevent layout shift */
@@ -68,7 +68,7 @@ a {
 
 /* Selection color */
 ::selection {
-  @apply bg-green-500 text-black;
+  @apply bg-white text-black;
 }
 
 /* Feature font - Michroma */

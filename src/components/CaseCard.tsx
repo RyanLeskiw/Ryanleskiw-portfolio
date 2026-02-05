@@ -1,15 +1,15 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import { CaseStudy } from '@/types'
+import Link from "next/link";
+import Image from "next/image";
+import { CaseStudy } from "@/types";
 
 interface CaseCardProps {
-  study: CaseStudy
+  study: CaseStudy;
 }
 
 export default function CaseCard({ study }: CaseCardProps) {
   return (
     <Link href={`/work/${study.slug}`}>
-      <div className="group cursor-pointer overflow-hidden rounded-lg border border-gray-800 hover:border-accent-green transition-colors">
+      <div className="group cursor-pointer overflow-hidden rounded-lg border border-gray-800 hover:border-white transition-colors">
         {/* Thumbnail Image */}
         <div className="w-full aspect-video bg-gray-900 relative overflow-hidden">
           {study.thumbnailImage ? (
@@ -32,13 +32,15 @@ export default function CaseCard({ study }: CaseCardProps) {
 
         {/* Card Content */}
         <div className="p-6">
-          <h3 className="text-text-light text-lg font-bold font-feature mb-2 group-hover:text-accent-green transition-colors">
+          <h3 className="text-text-light text-lg font-bold font-feature mb-2 group-hover:text-white transition-colors">
             {study.title}
           </h3>
           <p className="text-gray-400 text-sm mb-3">{study.projectType}</p>
-          <p className="text-text-light text-sm line-clamp-2">{study.summary}</p>
+          <p className="text-text-light text-sm line-clamp-2">
+            {study.summary}
+          </p>
         </div>
       </div>
     </Link>
-  )
+  );
 }
