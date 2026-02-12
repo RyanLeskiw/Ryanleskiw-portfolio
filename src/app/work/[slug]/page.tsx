@@ -1,5 +1,6 @@
 import { caseStudies } from '@/data/caseStudies'
 import { notFound } from 'next/navigation'
+import Link from 'next/link'
 import type { Metadata } from 'next'
 import PullQuote from '@/components/PullQuote'
 
@@ -36,7 +37,11 @@ export async function generateStaticParams() {
 }
 
 export default function CaseStudyPage({ params }: CaseStudyPageProps) {
-  const study = caseStudies.find((s) => s.slug === params.slug)
+  const studyIndex = caseStudies.findIndex((s) => s.slug === params.slug)
+  const study = studyIndex !== -1 ? caseStudies[studyIndex] : undefined
+
+  const previousStudy = studyIndex > 0 ? caseStudies[studyIndex - 1] : null
+  const nextStudy = studyIndex >= 0 && studyIndex < caseStudies.length - 1 ? caseStudies[studyIndex + 1] : null
 
   if (!study) {
     notFound()
@@ -109,6 +114,31 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
             </div>
           ))}
         </div>
+
+        {/* Navigation between case studies */}
+        <nav className="mt-16 pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between gap-4">
+          {previousStudy ? (
+            <Link
+              href={`/work/${previousStudy.slug}`}
+              className="inline-block px-6 py-3 bg-white text-black font-bold rounded hover:bg-gray-200 transition-colors text-sm text-center sm:text-left"
+            >
+              ← Previous: {previousStudy.title}
+            </Link>
+          ) : (
+            <span className="text-gray-600 text-sm">Start of case studies</span>
+          )}
+
+          {nextStudy ? (
+            <Link
+              href={`/work/${nextStudy.slug}`}
+              className="inline-block px-6 py-3 bg-white text-black font-bold rounded hover:bg-gray-200 transition-colors text-sm text-center sm:text-right"
+            >
+              Next: {nextStudy.title} →
+            </Link>
+          ) : (
+            <span className="text-gray-600 text-sm sm:text-right">End of case studies</span>
+          )}
+        </nav>
       </div>
     </article>
   )
