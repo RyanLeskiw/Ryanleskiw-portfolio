@@ -17,7 +17,7 @@ const config: Config = {
       fontFamily: {
         'slab-serif': ['var(--font-courier-prime)', 'serif'],
         'sans': ['var(--font-inter)', 'sans-serif'],
-        'futuristic': ['var(--font-ibm-plex-mono)', '"Courier New"', 'monospace'],
+        'futuristic': ['var(--font-montserrat)', 'sans-serif'],
       },
       maxWidth: {
         container: '1200px',

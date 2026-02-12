@@ -15,7 +15,6 @@ export const metadata: Metadata = {
 export default function WorkPage() {
   return (
     <div className="relative">
-      <div className="stipple-bg" aria-hidden="true"></div>
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-bg-dark">
         <div className="max-w-container mx-auto">
           <h1 className="text-4xl sm:text-5xl font-bold font-futuristic tracking-futuristic text-text-light mb-6">Work</h1>

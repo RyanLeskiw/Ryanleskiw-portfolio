@@ -7,7 +7,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 w-full z-50 backdrop-blur-xl bg-gradient-to-b from-black/40 to-black/20 border-b border-gray-700/60">
+    <header className="fixed top-0 w-full z-50 border-b border-white/10 bg-black/40 backdrop-blur-2xl shadow-[0_12px_40px_rgba(0,0,0,0.75)]">
       <nav className="max-w-container mx-auto pl-4 sm:pl-4 lg:pl-6 pr-4 sm:pr-6 lg:pr-8 py-4 flex items-center justify-between">
         <Link
           href="/"

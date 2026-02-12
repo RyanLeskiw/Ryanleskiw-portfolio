@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, IBM_Plex_Mono, Courier_Prime, Kalam, Michroma, Lora } from 'next/font/google'
+import { Inter, Montserrat, Courier_Prime, Kalam, Michroma, Lora, Young_Serif } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -12,10 +12,10 @@ const inter = Inter({
   display: 'swap',
 })
 
-const ibmPlexMono = IBM_Plex_Mono({
+const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['400', '600', '700'],
-  variable: '--font-ibm-plex-mono',
+  variable: '--font-montserrat',
   display: 'swap',
 })
 
@@ -44,6 +44,13 @@ const lora = Lora({
   subsets: ['latin'],
   weight: ['400', '700'],
   variable: '--font-lora',
+  display: 'swap',
+})
+
+const youngSerif = Young_Serif({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-young-serif',
   display: 'swap',
 })
 
@@ -76,7 +83,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${ibmPlexMono.variable} ${courierPrime.variable} ${kalam.variable} ${michroma.variable} ${lora.variable}`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${montserrat.variable} ${courierPrime.variable} ${kalam.variable} ${michroma.variable} ${lora.variable} ${youngSerif.variable}`}
+    >
       <body className="bg-bg-dark text-text-light font-sans">
         <StructuredData />
         <Header />

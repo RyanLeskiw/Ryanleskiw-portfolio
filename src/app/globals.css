@@ -50,15 +50,9 @@ body {
   letter-spacing: 0.01em;
 }
 
-/* Grid pattern background for homepage */
-.stipple-bg {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  background: url('data:image/svg+xml;utf8,<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="%23ffffff" stroke-width="0.5" opacity="0.225"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
-  background-size: 40px 40px;
-  background-repeat: repeat;
+/* Hero name font - Young Serif */
+.font-hero-name {
+  font-family: var(--font-young-serif), serif !important;
 }
 
 /* Link styling */
@@ -71,21 +65,21 @@ a {
   @apply bg-white text-black;
 }
 
-/* Feature font - Michroma */
+/* Feature font - Montserrat */
 .font-feature {
-  font-family: var(--font-michroma), sans-serif !important;
+  font-family: var(--font-montserrat), sans-serif !important;
   letter-spacing: 0.05em !important;
   font-weight: 400 !important;
 }
 
-/* Apply Michroma to all headings */
+/* Apply Montserrat to all headings */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-michroma), sans-serif !important;
+  font-family: var(--font-montserrat), sans-serif !important;
   letter-spacing: 0.05em !important;
   font-weight: 400 !important;
 }

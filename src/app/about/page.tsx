@@ -8,7 +8,6 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="relative">
-      <div className="stipple-bg" aria-hidden="true"></div>
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-bg-dark">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl sm:text-5xl font-bold font-futuristic tracking-futuristic text-text-light mb-8">About</h1>
