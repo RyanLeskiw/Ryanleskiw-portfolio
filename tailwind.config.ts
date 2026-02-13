@@ -13,6 +13,8 @@ const config: Config = {
         'text-light': '#f5f5f5',
         'accent-green': '#2d5a3d',
         'accent-green-light': '#58c77a',
+        'accent-gold': '#5d8a54',
+        'accent-gold-light': '#6fa066',
       },
       fontFamily: {
         'slab-serif': ['var(--font-courier-prime)', 'serif'],

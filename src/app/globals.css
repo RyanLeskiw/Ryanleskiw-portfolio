@@ -2,6 +2,12 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+/* Accent - petal green (higher contrast) */
+:root {
+  --accent-gold: #5d8a54;
+  --accent-gold-light: #6fa066;
+}
+
 /* Fonts are now loaded via next/font in layout.tsx - no need for Google Fonts CDN */
 
 /* Smooth scrolling */
