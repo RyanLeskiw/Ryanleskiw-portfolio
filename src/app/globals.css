@@ -1,0 +1,91 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Accent - petal green (higher contrast) */
+:root {
+  --accent-gold: #5d8a54;
+  --accent-gold-light: #6fa066;
+}
+
+/* Fonts are now loaded via next/font in layout.tsx - no need for Google Fonts CDN */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(15, 15, 15);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(90, 90, 90);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(120, 120, 120);
+}
+
+/* Prevent layout shift */
+html {
+  overflow-y: scroll;
+}
+
+body {
+  @apply bg-bg-dark text-text-light;
+  cursor: url('data:image/svg+xml;utf8,<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><line x1="24" y1="4" x2="24" y2="16" stroke="white" stroke-width="2" stroke-linecap="round"/><line x1="24" y1="32" x2="24" y2="44" stroke="white" stroke-width="2" stroke-linecap="round"/><line x1="4" y1="24" x2="16" y2="24" stroke="white" stroke-width="2" stroke-linecap="round"/><line x1="32" y1="24" x2="44" y2="24" stroke="white" stroke-width="2" stroke-linecap="round"/><rect x="22" y="22" width="4" height="4" fill="white"/></svg>')
+      24 24,
+    crosshair;
+}
+
+/* Handwritten font utility */
+.font-hand {
+  font-family: var(--font-kalam), cursive;
+}
+
+/* Quote font utility - Lora (professional serif) */
+.font-quote {
+  font-family: var(--font-lora), serif;
+  letter-spacing: 0.01em;
+}
+
+/* Hero name font - Young Serif */
+.font-hero-name {
+  font-family: var(--font-young-serif), serif !important;
+}
+
+/* Link styling */
+a {
+  @apply transition-colors;
+}
+
+/* Selection color */
+::selection {
+  @apply bg-white text-black;
+}
+
+/* Feature font - Montserrat */
+.font-feature {
+  font-family: var(--font-montserrat), sans-serif !important;
+  letter-spacing: 0.05em !important;
+  font-weight: 400 !important;
+}
+
+/* Apply Montserrat to all headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-montserrat), sans-serif !important;
+  letter-spacing: 0.05em !important;
+  font-weight: 400 !important;
+}
