@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/60" />
 
       <div className="relative z-10 w-full max-w-container text-left pb-2 pl-8 sm:pl-12 lg:pl-20">
-        <h1 className="font-bold text-yellow-400 max-w-6xl leading-tight">
+        <h1 className="font-bold text-accent-gold max-w-6xl leading-tight">
           <span
             className="font-hero-name text-5xl sm:text-6xl md:text-7xl lg:text-8xl block"
           >
